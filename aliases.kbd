@@ -1,0 +1,3 @@
+(defalias
+  cesc (tap-hold-next-release 200 esc lctl) ;; key will behave as ESC when tapped, but as CTRL when held down
+  )
