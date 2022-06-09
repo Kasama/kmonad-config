@@ -1,3 +1,5 @@
 (defalias
-  cesc (tap-hold-next-release 200 esc lctl) ;; key will behave as ESC when tapped, but as CTRL when held down
+  cesc (tap-hold-next-release 400 esc lctl) ;; key will behave as ESC when tapped, but as CTRL when held down
+  macros (layer-toggle macros)
+  macro (around-next @macros) ;; Key will switch to the macros layer for 500ms, then act as caps-lock
   )
