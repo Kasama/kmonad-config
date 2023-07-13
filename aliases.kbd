@@ -2,4 +2,8 @@
   cesc (tap-hold-next-release 400 esc lctl) ;; key will behave as ESC when tapped, but as CTRL when held down
   macros (layer-toggle macros)
   macro (around-next @macros) ;; Key will switch to the macros layer for 500ms, then act as caps-lock
+  ;; sftmacro (tap-hold-next-release 400 rsft @macros)
+  numbers (layer-toggle numbers)
+  bsnum (tap-next 102d @numbers)
+  mute (cmd-button "~/dotfiles/polybar/mic-control-toggle.sh >/dev/null 2>&1")
   )
