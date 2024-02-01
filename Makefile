@@ -1,11 +1,12 @@
 ifeq (Kasama,$(shell hostname))
 	DESIRED_TARGET := cmstorm-tk.kbd
 else
-	DESIRED_TARGET := $(HOST)
+	DESIRED_TARGET := $(shell hostname).kbd
 endif
+DESIRED_TARGET := cmstorm-tk.kbd
 
 BASE_FILES = aliases.kbd
-TARGET_FILE = config.kbd
+TARGET_FILE = config-cmstorm.kbd
 
 .PHONY: all
 
